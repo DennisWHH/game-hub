@@ -11,7 +11,7 @@ const GameGrid = () => {
   return (
     <>
       {error && <Text>{error}</Text>}
-      {isLoading && <Spinner size="xl" />}
+
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
         padding="20px"
