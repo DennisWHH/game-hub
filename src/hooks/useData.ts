@@ -38,7 +38,7 @@ const useData = <T>(
 
       return () => controller.abort();
     },
-    deps ? [...deps] : [] // dependencies => [] empty dependencies = fetch data onyl once rendered
+    deps ? [...deps] : [] // dependencies => [] empty dependencies = fetch data only once rendered
   );
 
   return { data, error, isLoading };

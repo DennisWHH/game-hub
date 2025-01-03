@@ -10,7 +10,7 @@ interface Props {
 }
 
 const GameGrid = ({ selectedGenre }: Props) => {
-  const { data, error, isLoading } = useGames(selectedGenre); // selectedGenre gets passed from the App to this component
+  const { data, error, isLoading } = useGames(selectedGenre); // selectedGenre gets passed from the App to this component => data = fetching only selectedGenre
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
