@@ -20,8 +20,10 @@ const useGames = (gameQuery: GameQuery) =>
     "/games",
     {
       params: {
+        //query parameters named acc. to API list (like "ordering")
         genres: gameQuery.genre?.slug,
         platforms: gameQuery.platform?.id,
+        ordering: gameQuery.sortOrder,
       },
     },
     [gameQuery]
